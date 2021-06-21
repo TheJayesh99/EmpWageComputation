@@ -40,7 +40,7 @@ public class App
 			dailywage=0;
 			System.out.println("Employee is Absent");
 		}
-        TotalWage=TotalWage+dailywage;
+        TotalWage = TotalWage + dailywage;
        }
        
        System.out.println("Total salary :"+ TotalWage);
