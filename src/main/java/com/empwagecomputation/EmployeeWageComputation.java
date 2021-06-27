@@ -15,14 +15,14 @@ public class EmployeeWageComputation
 	{
 		System.out.println( "Welcome to Employee Wage Computation" );
 		int totalWage = 0;
-		int workingHrs=0;
-		int workingdays=0;
-		totalWage = calculateEmployeeSalary(totalWage, workingHrs, workingdays);
+		totalWage = calculateEmployeeSalary(totalWage);
 		System.out.println("Total salary :"+ totalWage);
 
 	}
 
-	private static int calculateEmployeeSalary(int totalWage, int workingHrs, int workingdays) {
+	private static int calculateEmployeeSalary(int totalWage) {
+		int workingHrs=0;
+		int workingdays=0;
 		int dailyWage = 0;
 		while (workingHrs < TOTAL_WORKING_HOURS && workingdays < TOTAL_WORKING_DAYS )
 		{
